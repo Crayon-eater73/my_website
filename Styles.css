@@ -1,0 +1,36 @@
+p {
+    font-size: 1.2rem;
+    color:rgb(150, 56, 126);
+}
+
+.highlight {
+    background-color: black;
+    font-weight: bold;
+}
+#Washington {
+    font-size: 2rem;
+    color:rgb(55, 89, 149);
+    font-family: Arial, sans-serif;
+}
+
+section p {
+    line-height: 1.5rem;
+}
+
+h2.subtitle {
+    color: rgb(124, 124, 124);
+    font-style: italic;
+}
+
+a[target="_blank"] {
+    color: rgb(153, 24, 24);
+    text-decoration: underline;
+}
+
+button:hover {
+background-color: blueviolet;
+}
+
+p::first-line {
+    font-weight: bold;
+}
