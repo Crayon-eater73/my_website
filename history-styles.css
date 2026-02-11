@@ -1,0 +1,67 @@
+h1 {
+    font-size: 2rem;
+    color:rgb(116, 18, 155);
+}
+
+body {
+    background-color:black;
+    background-image: linear-gradient(to bottom right, rgb(2, 2, 2), rgb(58, 24, 32));
+    height: 100vh;
+    margin: 0;
+}
+
+.highlight {
+    background-color: black;
+    font-weight: bold;
+}
+
+section p {
+    line-height: 1.5rem;
+}
+
+h2.subtitle {
+    color: rgb(124, 124, 124);
+    font-style: italic;
+}
+
+a[target="_blank"] {
+    color: rgb(24, 153, 142);
+    text-decoration: underline;
+}
+
+button:hover {
+background-color: rgba(92, 33, 33, 0.747);
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+/* Container*/
+.text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+}
+
+/* 3-column layout */
+.event {
+    display: grid;
+    grid-template-columns: 120px 200px 1fr;
+    gap: 20px;
+    align-items: center;
+    border-bottom: 1px solid rgba(116, 18, 155, 0.3);
+    padding-bottom: 15px;
+}
+
+.phrase-title {
+    color: rgb(24, 153, 142);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.description {
+    color: white;
+    margin: 0;
+}

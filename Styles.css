@@ -1,16 +1,25 @@
-p {
-    font-size: 1.2rem;
-    color:rgb(150, 56, 126);
+h1 {
+    font-size: 2rem;
+    color:rgb(44, 87, 143);
+}
+
+body {
+    background-color:black;
+    background-image: linear-gradient(to bottom right, rgb(2, 2, 2), rgba(63, 49, 145, 0.39));
+    height: 100vh;
+    margin: 0;
 }
 
 .highlight {
     background-color: black;
     font-weight: bold;
 }
-#Washington {
-    font-size: 2rem;
-    color:rgb(55, 89, 149);
-    font-family: Arial, sans-serif;
+
+#Blenderlogo {
+    color: rgb(141, 226, 162);
+    padding: 10px;
+    border: 40px;
+    padding: 10px
 }
 
 section p {
@@ -31,6 +40,6 @@ button:hover {
 background-color: blueviolet;
 }
 
-p::first-line {
+p:first-line {
     font-weight: bold;
 }
