@@ -65,3 +65,48 @@ p::first-line {
     color: white;
     margin: 0;
 }
+
+/* Navgation Menu*/
+nav ul {
+    list-styles:none;
+    margin: 0;
+    padding: 0;
+    display: flex; /*horizontal*/
+    background-color: black;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: rgb(141, 226, 162);
+    font-weight:bold;
+}
+
+nav ul li a:hover {
+    background-color: rgba(63,49,145,0.5);
+}
+/*fluid layout*/
+.scalable-img {
+    width: 40%; /*fluid*/
+    max-width: 600px;
+    height: auto; /*maintains proportions*/
+    border: 3px solid rgb(44, 87, 143);
+    padding: 10px;
+    margin:20px auto;
+    display: block;
+}
+
+/*for mobilee to make images vertical*/
+@media (max-width:700px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/*making images larger on small screens*/
+@media (max-width:500px){
+    .scalable-img {
+        width:80%;
+    }
+}
