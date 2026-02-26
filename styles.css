@@ -46,7 +46,7 @@ p:first-line {
 
 /* Navgation Menu*/
 nav ul {
-    list-styles:none;
+    list-style:none;
     margin: 0;
     padding: 0;
     display: flex; /*horizontal*/
@@ -63,11 +63,43 @@ nav ul li a {
 nav ul li a:hover {
     background-color: rgba(63,49,145,0.5);
 }
+
+p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    line-height: 1.5;
+}
+
+/* FLEX CONTAINER #2: rows for refreance pictures*/
+.text-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Flex items */
+.event {
+    flex: 1 1 250px;
+    text-align: center;
+}
+
+/* Scalable images*/
+.event img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border: 2px solid rgb(44, 87, 143);
+    padding: 5px;
+    background-color: black;
+}
+
 /*fluid layout*/
 .scalable-img {
-    width: 40%; /*fluid*/
+    width: 40%;
     max-width: 600px;
-    height: auto; /*maintains proportions*/
+    height: auto;
     border: 3px solid rgb(44, 87, 143);
     padding: 10px;
     margin:20px auto;

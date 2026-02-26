@@ -1,6 +1,19 @@
+body {
+    background-color:black;
+    background-image: linear-gradient(to bottom right, rgb(2, 2, 2), rgba(92, 44, 0, 0.61));
+    min-height: 100vh;
+    margin: 0;
+    color: whitesmoke
+}
+
+h1 {
+    font-size: 2rem;
+    color:rgb(116, 18, 155);
+}
+
 /* Navgation Menu*/
 nav ul {
-    list-styles:none;
+    list-style:none;
     margin: 0;
     padding: 0;
     display: flex; /*horizontal*/
@@ -17,6 +30,47 @@ nav ul li a {
 nav ul li a:hover {
     background-color: rgba(63,49,145,0.5);
 }
+
+p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    line-height: 1.5;
+}
+
+/*Flex container 2*/
+.page-layout {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.content {
+    flex: 3;
+}
+
+/*grid compentes for the bledner skills*/
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.15);
+    padding:20px;
+    border:1px solid rgb(44, 87, 143);
+    text-align: center;
+    border-radius: 6px;
+}
+
 /*fluid layout*/
 .scalable-img {
     width: 40%; /*fluid*/
@@ -28,12 +82,21 @@ nav ul li a:hover {
     display: block;
 }
 
-/*for mobilee to make images vertical*/
-@media (max-width:700px) {
+/*medium screens*/
+@media (max-width:768px) {
     nav ul {
         flex-direction: column;
         text-align: center;
     }
+}
+/*page layout stacks */
+.page-layout {
+    flex-direction: column;
+}
+
+/*grid into 2 columns*/
+.skill-grid {
+    grid-template-columns: repeat(2, 1fr);
 }
 
 /*making images larger on small screens*/
@@ -42,3 +105,13 @@ nav ul li a:hover {
         width:80%;
     }
 }
+
+/*grid goes into one column*/
+.skill-grid {
+    grid-template-columns: 1fr;
+}
+
+nav ul {
+    font-size: 14px;
+}
+

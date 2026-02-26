@@ -37,6 +37,12 @@ p::first-line {
     font-weight: bold;
 }
 
+p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    line-height: 1.5;
+}
+
 /* Container*/
 .text-box {
     display: flex;
@@ -68,7 +74,7 @@ p::first-line {
 
 /* Navgation Menu*/
 nav ul {
-    list-styles:none;
+    list-style:none;
     margin: 0;
     padding: 0;
     display: flex; /*horizontal*/
