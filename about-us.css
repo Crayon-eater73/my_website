@@ -9,6 +9,12 @@ body {
 h1 {
     font-size: 2rem;
     color:rgb(116, 18, 155);
+    font-style: italic;
+}
+
+h2 {
+    color:rgb(116, 18, 155);
+    font-style: italic;
 }
 
 /* Navgation Menu*/
