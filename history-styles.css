@@ -4,8 +4,9 @@ h1 {
 }
 
 body {
+    font-family:'Playfair Display';
     background-color:black;
-    background-image: linear-gradient(to bottom right, rgb(2, 2, 2), rgb(58, 24, 32));
+    background-image: linear-gradient(to bottom right, rgb(2, 2, 2), rgb(116, 18, 155, 0.3));
     height: 100vh;
     margin: 0;
 }
@@ -91,6 +92,14 @@ nav ul li a {
 nav ul li a:hover {
     background-color: rgba(63,49,145,0.5);
 }
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* keeps it above other content */
+}
+
+
 /*fluid layout*/
 .scalable-img {
     width: 40%; /*fluid*/

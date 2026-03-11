@@ -4,8 +4,9 @@ h1 {
 }
 
 body {
+    font-family:'Playfair Display';
     background-color:black;
-    background-image: linear-gradient(to bottom right, rgb(2, 2, 2), rgb(14, 26, 51));
+    background-image: linear-gradient(to bottom right, rgb(2, 2, 2), rgb(63, 49, 145, 0.39));
     height: 100vh;
     margin: 0;
 }
@@ -17,6 +18,12 @@ body {
 
 section p {
     line-height: 1.5rem;
+}
+
+p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    line-height: 1.5;
 }
 
 h2.subtitle {
@@ -91,11 +98,44 @@ nav ul li a {
 nav ul li a:hover {
     background-color: rgba(63,49,145,0.5);
 }
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* keeps it above other content */
+}
+
+
+/* FLEX CONTAINER #2: rows for refreance pictures*/
+.text-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Flex items */
+.event {
+    flex: 1 1 250px;
+    text-align: auto;
+}
+
+/* Scalable images*/
+.event img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border: 2px solid rgb(44, 87, 143);
+    padding: 5px;
+    background-color: black;
+}
+
 /*fluid layout*/
 .scalable-img {
-    width: 40%; /*fluid*/
+    width: 40%;
     max-width: 600px;
-    height: auto; /*maintains proportions*/
+    height: auto;
     border: 3px solid rgb(44, 87, 143);
     padding: 10px;
     margin:20px auto;
@@ -122,18 +162,4 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 15px;
-}
-
-.cart-link {
-  font-size: 1.1rem;
-  text-decoration: none;
-  color: #333;
-  padding: 8px 12px;
-  border: 1px solid #333;
-  border-radius: 5px;
-}
-
-.cart-link:hover {
-  background: #333;
-  color: white;
 }

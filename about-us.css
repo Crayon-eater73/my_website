@@ -1,6 +1,7 @@
 body {
+    font-family:'Playfair Display';
     background-color:black;
-    background-image: linear-gradient(to bottom right, rgb(2, 2, 2), rgba(92, 44, 0, 0.61));
+    background-image: linear-gradient(to bottom right, rgb(2, 2, 2), rgb(116, 18, 155, 0.3));
     min-height: 100vh;
     margin: 0;
     color: whitesmoke
@@ -36,6 +37,13 @@ nav ul li a {
 nav ul li a:hover {
     background-color: rgba(63,49,145,0.5);
 }
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* keeps it above other content */
+}
+
 
 p {
     overflow-wrap: break-word;
