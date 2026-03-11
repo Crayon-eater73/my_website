@@ -9,6 +9,7 @@ body {
     background-image: linear-gradient(to bottom right, rgb(2, 2, 2), rgb(116, 18, 155, 0.3));
     height: 100vh;
     margin: 0;
+    color: whitesmoke;
 }
 
 .highlight {
