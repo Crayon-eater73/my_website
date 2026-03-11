@@ -97,7 +97,7 @@ p {
 /* Scalable images*/
 .event img {
     width: 100%;
-    max-width: 250px;
+    max-width: 400px;
     height: auto;
     border: 2px solid rgb(44, 87, 143);
     padding: 5px;
