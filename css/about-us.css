@@ -1,0 +1,204 @@
+html {
+    color-scheme: light;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: black;
+    background-image: linear-gradient(to bottom right, rgb(2, 2, 2), rgba(116, 18, 155, 0.3));
+    min-height: 100vh;
+    margin: 0;
+    color: whitesmoke;
+}
+
+h1 {
+    font-size: 2rem;
+    color: rgb(116, 18, 155);
+    font-style: italic;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(116, 18, 155);
+    font-style: italic;
+}
+
+/* HAMBURGER MENU BUTTON */
+.menu-button {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 2000;
+    cursor: pointer;
+
+    background-color: black;
+    padding: 10px;
+    border: 2px solid rgb(141, 226, 162);
+    border-radius: 8px;
+}
+
+.menu-button i {
+    font-size: 28px;
+    color: rgb(141, 226, 162);
+}
+
+/* SLIDING NAVIGATION MENU */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    background-color: black;
+    padding-top: 80px;
+    transition: transform 0.3s ease;
+    z-index: 1500;
+}
+
+/* Hidden by default */
+.nav-closed {
+    transform: translateX(-100%);
+}
+
+/* Slide in */
+.nav-open {
+    transform: translateX(0);
+}
+
+/* NAV LINKS (your original colors preserved) */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: rgb(141, 226, 162);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: rgba(63, 49, 145, 0.5);
+}
+
+/*Page Layout (Flexbox)*/
+.page-layout {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.content {
+    flex: 3;
+}
+
+/*Blender Skill Grid*/
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skill-card {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border: 1px solid rgb(44, 87, 143);
+    text-align: center;
+    border-radius: 6px;
+}
+
+/*Scalable Image*/
+.scalable-img {
+    width: 40%;
+    max-width: 600px;
+    height: auto;
+    border: 3px solid rgb(44, 87, 143);
+    padding: 10px;
+    margin: 20px auto;
+    display: block;
+}
+
+/*MEDIA QUERIES*/
+
+/*Medium screens*/
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .page-layout {
+        flex-direction: column;
+    }
+
+    .skill-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*Small screens*/
+@media (max-width: 500px) {
+
+    .scalable-img {
+        width: 80%;
+    }
+
+    .skill-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*Table Styling*/
+td, th {
+    padding: 10px;
+}
+
+/* Wraps all page content so it can slide */
+.page-content {
+    transition: transform 0.3s ease;
+    transform: translateX(0);
+}
+
+/* When nav is open, push the page to the right */
+.nav-open ~ .page-content {
+    transform: translateX(260px);
+}
+
+.table-and-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px; /* reduce space between them */
+  width: 100%; /* make the container full width */
+  margin-top: 30px;
+}
+
+.bottom-flex {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.info-wrapper {
+  background: rgba(255, 255, 255, 0.05); /* makes the height stretch visible */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.table-wrapper {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 8px;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Product Details</title>
+
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Lineicons -->
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Hamburger Button -->
+    <div class="menu-button">
+        <i class="lni lni-menu"></i>
+    </div>
+
+    <!-- Sliding Navigation Menu -->
+    <nav class="nav-closed">
+        <ul>
+            <li><a href="../html/index.html">Home</a></li>
+            <li><a href="../html/history.html">History</a></li>
+            <li><a href="../html/about-us.html">Contact</a></li>
+            <li><a href="../html/products.html">Products</a></li>
+            <li><a href="https://docs.blender.org/manual/en/latest/interface/tool_system.html" target="_blank">
+                Blender Manual 5.0</a></li>
+        </ul>
+    </nav>
+
+    <!-- CENTERED PRODUCT CONTENT -->
+    <div class="product-container">
+        <h1>Goop Juice</h1>
+
+        <img src="../images/final/goop-juice-bledner.png" alt="Goop juice keychain">
+
+        <p><strong>Price:</strong> 14.99 USD</p>
+        <p><strong>Description:</strong> The Resident Evil healing agent Keychain.</p>
+        <p>Healing agent in Resident Evil 7 and 8. It's a green‑ish liquid that can reattach mold‑infected people.
+            Used by Ethan Winters.</p>
+
+        <a class="back-link" href="../html/products.html">Back to Products</a>
+    </div>
+
+    <script>
+        const menuButton = document.querySelector('.menu-button');
+        const nav = document.querySelector('nav');
+
+        menuButton.addEventListener('click', () => {
+            nav.classList.toggle('nav-open');
+            nav.classList.toggle('nav-closed');
+        });
+    </script>
+
+</body>
+
+</html>

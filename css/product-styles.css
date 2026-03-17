@@ -1,0 +1,233 @@
+html {
+    color-scheme: light;
+}
+
+h1 {
+    font-size: 2rem;
+    color: rgb(170, 55, 161);
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: black;
+    background-image: linear-gradient(
+        to bottom right,
+        rgb(2, 2, 2),
+        rgba(63, 49, 145, 0.39)
+    );
+    min-height: 100vh;
+    margin: 0;
+    color: whitesmoke;
+}
+
+p {
+    overflow-wrap: break-word;
+    line-height: 1.5;
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+h2.subtitle {
+    color: rgb(124, 124, 124);
+    font-style: italic;
+}
+
+a[target="_blank"] {
+    color: rgb(24, 153, 142);
+    text-decoration: underline;
+}
+
+button:hover {
+    background-color: rgba(92, 33, 33, 0.75);
+}
+
+/* HAMBURGER MENU BUTTON */
+.menu-button {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 2000;
+    cursor: pointer;
+
+    background-color: black;
+    padding: 10px;
+    border: 2px solid rgb(141, 226, 162);
+    border-radius: 8px;
+}
+
+.menu-button i {
+    font-size: 28px;
+    color: rgb(141, 226, 162);
+}
+
+/* HAMBURGER MENU BUTTON */
+.menu-button {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 2000;
+    cursor: pointer;
+
+    background-color: black;
+    padding: 10px;
+    border: 2px solid rgb(141, 226, 162);
+    border-radius: 8px;
+}
+
+.menu-button i {
+    font-size: 28px;
+    color: rgb(141, 226, 162);
+}
+
+/* SLIDING NAVIGATION MENU */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    background-color: black;
+    padding-top: 80px;
+    transition: transform 0.3s ease;
+    z-index: 1500;
+}
+
+/* Hidden by default */
+.nav-closed {
+    transform: translateX(-100%);
+}
+
+/* Slide in */
+.nav-open {
+    transform: translateX(0);
+}
+
+/* NAV LINKS (your original colors preserved) */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: rgb(141, 226, 162);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: rgba(63, 49, 145, 0.5);
+}
+
+/*Text Box Container */
+.text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+}
+
+/*Event Layout 3-column*/
+.event {
+    display: grid;
+    grid-template-columns: 120px 200px 1fr;
+    gap: 20px;
+    align-items: center;
+    border-bottom: 1px solid rgba(116, 18, 155, 0.3);
+    padding-bottom: 15px;
+}
+
+.phrase-title {
+    color: rgb(24, 153, 142);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.description {
+    margin: 0;
+    color: white;
+}
+
+/*Event Images*/
+.event img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 2px solid rgb(44, 87, 143);
+    padding: 5px;
+    background-color: black;
+}
+
+/*Scalable Image*/
+.scalable-img {
+    width: 40%;
+    max-width: 600px;
+    height: auto;
+    border: 3px solid rgb(44, 87, 143);
+    padding: 10px;
+    margin: 20px auto;
+    display: block;
+}
+
+/*Header Layout*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+/*MEDIA QUERIES*/
+
+/*Tablet*/
+@media (max-width: 700px) {
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    /*Event grid becomes 2 columns*/
+    .event {
+        grid-template-columns: 120px 1fr;
+    }
+}
+
+/*Phone*/
+@media (max-width: 500px) {
+
+    .scalable-img {
+        width: 80%;
+    }
+
+    /*Event grid becomes 1 column*/
+    .event {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 600px) {
+    .event img {
+        max-width: 90vw;
+    }
+}
+
+/* Wraps all page content so it can slide */
+.page-content {
+    transition: transform 0.3s ease;
+    transform: translateX(0);
+}
+
+/* When nav is open, push the page to the right */
+.nav-open ~ .page-content {
+    transform: translateX(260px); /* nav width + spacing */
+}
+

@@ -1,0 +1,185 @@
+html {
+    color-scheme: light;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: black;
+    background-image: linear-gradient(
+        to bottom right,
+        rgb(2, 2, 2),
+        rgba(116, 18, 155, 0.3)
+    );
+    min-height: 100vh;
+    margin: 0;
+    color: whitesmoke;
+}
+
+/* Full‑width content */
+.history-container {
+    width: 100%;
+    padding: 40px 60px;
+    text-align: center;
+}
+
+/* Headings */
+h1 {
+    font-size: 2rem;
+    color: rgb(116, 18, 155);
+}
+
+h2 {
+    color: rgb(116, 18, 155);
+}
+
+h3 {
+    color: rgb(104, 68, 68);
+}
+
+/* Paragraphs */
+p {
+    overflow-wrap: break-word;
+    line-height: 1.5;
+}
+
+p::first-line {
+    font-weight: bold;
+}
+
+/* HAMBURGER MENU BUTTON */
+.menu-button {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 2000;
+    cursor: pointer;
+
+    background-color: black;
+    padding: 10px;
+    border: 2px solid rgb(141, 226, 162);
+    border-radius: 8px;
+}
+
+.menu-button i {
+    font-size: 28px;
+    color: rgb(141, 226, 162);
+}
+
+/* SLIDING NAVIGATION MENU */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 240px;
+    height: 100vh;
+    background-color: black;
+    padding-top: 80px;
+    transition: transform 0.3s ease;
+    z-index: 1500;
+}
+
+/* Hidden by default */
+.nav-closed {
+    transform: translateX(-100%);
+}
+
+/* Slide in */
+.nav-open {
+    transform: translateX(0);
+}
+
+/* NAV LINKS (your original colors preserved) */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    color: rgb(141, 226, 162);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: rgba(63, 49, 145, 0.5);
+}
+
+
+/* Timeline Layout */
+.text-box {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* Event Grid */
+.event {
+    display: grid;
+    grid-template-columns: 120px 200px 1fr;
+    gap: 20px;
+    align-items: center;
+    border-bottom: 1px solid rgba(116, 18, 155, 0.3);
+    padding-bottom: 15px;
+    text-align: left;
+}
+
+.timestamp {
+    font-weight: bold;
+    color: rgb(24, 153, 142);
+}
+
+.what-is-it {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: rgb(24, 153, 142);
+}
+
+.description {
+    margin: 0;
+    color: white;
+}
+
+/* MEDIA QUERIES */
+
+/* Tablet */
+@media (max-width: 700px) {
+    .history-container {
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .event {
+        grid-template-columns: 120px 1fr;
+    }
+}
+
+/* Phone */
+@media (max-width: 500px) {
+    .history-container {
+        padding: 15px;
+    }
+
+    .event {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+/* Wraps all page content so it can slide */
+.page-content {
+    transition: transform 0.3s ease;
+    transform: translateX(0);
+}
+
+/* When nav is open, push the page to the right */
+.nav-open ~ .page-content {
+    transform: translateX(260px); /* nav width + spacing */
+}
