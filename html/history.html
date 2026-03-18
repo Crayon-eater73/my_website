@@ -11,108 +11,134 @@
 
     <!-- Page CSS -->
     <link rel="stylesheet" href="../css/history.css">
+
+    <!-- Lineicons -->
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Lineicons -->
-    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
+    <!-- HEADER + NAVIGATION -->
+    <header>
+        <!-- Hamburger Button -->
+        <button class="menu-button" aria-label="Open navigation menu">
+            <i class="lni lni-menu"></i>
+        </button>
 
-    <!-- Hamburger Button -->
-    <div class="menu-button">
-        <i class="lni lni-menu"></i>
-    </div>
+        <!-- Sliding Navigation Menu -->
+        <nav class="nav-closed" aria-label="Main Navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../html/history.html">History</a></li>
+                <li><a href="../html/about-us.html">Contact</a></li>
+                <li><a href="../html/products.html">Products</a></li>
+                <li>
+                    <a href="https://docs.blender.org/manual/en/latest/interface/tool_system.html" target="_blank">
+                        Blender Manual 5.0
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Sliding Navigation Menu -->
-    <nav class="nav-closed">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="../html/history.html">History</a></li>
-            <li><a href="../html/about-us.html">Contact</a></li>
-            <li><a href="../html/products.html">Products</a></li>
-            <li><a href="https://docs.blender.org/manual/en/latest/interface/tool_system.html" target="_blank">
-                Blender Manual 5.0</a></li>
-        </ul>
-    </nav>
-
-    <!-- EVERYTHING BELOW SLIDES RIGHT -->
+    <!-- PAGE CONTENT -->
     <div class="page-content">
 
-        <!-- Centered Content Wrapper -->
-        <div class="history-container">
+        <main class="history-container">
 
             <h1>The History Of What The Items Are And My Experiences</h1>
 
-            <h2>Item Box</h2>
-            <p>The item box wasn't too difficult. The shading and textures were a bit difficult to replicate or improve.</p>
+            <section aria-labelledby="item-box">
+                <h2 id="item-box">Item Box</h2>
+                <p>
+                    The item box wasn't too difficult. The shading and textures were a bit difficult to replicate or improve.
+                </p>
+            </section>
 
-            <h2>Arm Flask</h2>
-            <p>Building this out was very easy. However, I had major issues with texture painting, which forced me to spend
-                most of the time figuring out how to set the object up for texture paint and then learning how to paint with a mouse.</p>
+            <section aria-labelledby="arm-flask">
+                <h2 id="arm-flask">Arm Flask</h2>
+                <p>
+                    Building this out was very easy. However, I had major issues with texture painting, which forced me to spend
+                    most of the time figuring out how to set the object up for texture paint and then learning how to paint with a mouse.
+                </p>
+            </section>
 
-            <h2>Umbrella Corporation</h2>
-            <p>This was one of the easiest parts of the project. I had no issues building it out and it was very easy to color.</p>
+            <section aria-labelledby="umbrella-corp">
+                <h2 id="umbrella-corp">Umbrella Corporation</h2>
+                <p>
+                    This was one of the easiest parts of the project. I had no issues building it out and it was very easy to color.
+                </p>
+            </section>
 
-            <h2>Goop Juice</h2>
-            <p>This was a little more difficult to make. I was unable to get the object to look like glass, but I managed and
-                used basic colors.</p>
+            <section aria-labelledby="goop-juice">
+                <h2 id="goop-juice">Goop Juice</h2>
+                <p>
+                    This was a little more difficult to make. I was unable to get the object to look like glass, but I managed and
+                    used basic colors.
+                </p>
+            </section>
 
-            <h3>How the items were built</h3>
-            <p>
-                First, I started with the base blocks, getting an idea of what my project was going to look like.
-                Then I slowly added more detail to the blocks.
-                I added smaller details like ridges and bumps.
-                Finally, I went into texture paint and added more details onto the objects.
-                Overall, it took a few weeks to troubleshoot and finish the models.
-            </p>
+            <section aria-labelledby="how-built">
+                <h3 id="how-built">How the items were built</h3>
+                <p>
+                    First, I started with the base blocks, getting an idea of what my project was going to look like.
+                    Then I slowly added more detail to the blocks.
+                    I added smaller details like ridges and bumps.
+                    Finally, I went into texture paint and added more details onto the objects.
+                    Overall, it took a few weeks to troubleshoot and finish the models.
+                </p>
+            </section>
 
-            <h3>Warning: minor/medium spoilers</h3>
+            <section aria-labelledby="spoilers">
+                <h3 id="spoilers">Warning: minor/medium spoilers</h3>
+            </section>
 
-            <!-- Timeline Events -->
-            <div class="text-box">
+            <!-- TIMELINE SECTION -->
+            <section class="text-box" aria-label="Timeline of Items">
 
-                <div class="event">
+                <article class="event">
                     <span class="timestamp">Jan 2026</span>
-                    <span class="what-is-it">Item Box</span>
+                    <h4 class="what-is-it">Item Box</h4>
                     <p class="description">
                         It's an item box in Resident Evil. It acts as a safe, connected storage container that allows
                         players to manage their limited inventory.
                     </p>
-                </div>
+                </article>
 
-                <div class="event">
+                <article class="event">
                     <span class="timestamp">Jan 2026</span>
-                    <span class="what-is-it">Arm Flask</span>
+                    <h4 class="what-is-it">Arm Flask</h4>
                     <p class="description">
                         The arms of Rose. In Resident Evil 8, the player (Ethan Winters) finds a flask containing Rose’s arms
                         after a major story event.
                     </p>
-                </div>
+                </article>
 
-                <div class="event">
+                <article class="event">
                     <span class="timestamp">Jan 2026</span>
-                    <span class="what-is-it">Umbrella Corporation</span>
+                    <h4 class="what-is-it">Umbrella Corporation</h4>
                     <p class="description">
                         A malicious multinational conglomerate from Resident Evil. They engineer bioweapons such as the
                         T‑virus, G‑virus, and various BOWs. One major impact they had was the Raccoon City incident.
                     </p>
-                </div>
+                </article>
 
-                <div class="event">
+                <article class="event">
                     <span class="timestamp">Jan 2026</span>
-                    <span class="what-is-it">Goop Juice</span>
+                    <h4 class="what-is-it">Goop Juice</h4>
                     <p class="description">
                         A healing agent in Resident Evil 7 and 8. It's a greenish liquid that can reattach limbs and heal
                         mold‑infected people. Used by Ethan Winters.
                     </p>
-                </div>
+                </article>
 
-            </div>
+            </section>
 
-        </div>
+        </main>
 
     </div>
 
+    <!-- MOBILE MENU SCRIPT -->
     <script>
         const menuButton = document.querySelector('.menu-button');
         const nav = document.querySelector('nav');
@@ -124,4 +150,5 @@
     </script>
 
 </body>
+
 </html>
