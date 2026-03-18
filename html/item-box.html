@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Details</title>
 
     <!-- Main Styles -->
     <link rel="stylesheet" href="../styles.css">
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Lineicons -->
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
@@ -18,37 +18,51 @@
 
 <body>
 
-    <!-- Hamburger Button -->
-    <div class="menu-button">
-        <i class="lni lni-menu"></i>
-    </div>
+    <!-- HEADER + NAVIGATION -->
+    <header>
+        <!-- Hamburger Button -->
+        <button class="menu-button" aria-label="Open navigation menu">
+            <i class="lni lni-menu"></i>
+        </button>
 
-    <!-- Sliding Navigation Menu -->
-    <nav class="nav-closed">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../html/history.html">History</a></li>
-            <li><a href="../html/about-us.html">Contact</a></li>
-            <li><a href="../html/products.html">Products</a></li>
-            <li><a href="https://docs.blender.org/manual/en/latest/interface/tool_system.html" target="_blank">
-                Blender Manual 5.0</a></li>
-        </ul>
-    </nav>
+        <!-- Sliding Navigation Menu -->
+        <nav class="nav-closed" aria-label="Main Navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../html/history.html">History</a></li>
+                <li><a href="../html/about-us.html">Contact</a></li>
+                <li><a href="../html/products.html">Products</a></li>
+                <li>
+                    <a href="https://docs.blender.org/manual/en/latest/interface/tool_system.html" target="_blank">
+                        Blender Manual 5.0
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- CENTERED PRODUCT CONTENT -->
-    <div class="product-container">
+    <!-- PRODUCT CONTENT -->
+    <main class="product-container">
+
         <h1>Item Box</h1>
 
-        <img src="../images/final/itembox-blender.png" alt="Item box keychain">
+        <figure>
+            <img src="../images/final/itembox-blender.png" alt="Item box keychain">
+        </figure>
 
         <p><strong>Price:</strong> 20.99 USD</p>
         <p><strong>Description:</strong> The Resident Evil Item Box Keychain.</p>
-        <p>It's an item box in Resident Evil. It acts as a safe and connected storage container that allows
-            players to manage their limited inventory.</p>
+
+        <p>
+            It's an item box in Resident Evil. It acts as a safe and connected storage container that allows
+            players to manage their limited inventory.
+        </p>
 
         <a class="back-link" href="../html/products.html">Back to Products</a>
-    </div>
 
+    </main>
+
+    <!-- MOBILE MENU SCRIPT -->
     <script>
         const menuButton = document.querySelector('.menu-button');
         const nav = document.querySelector('nav');
