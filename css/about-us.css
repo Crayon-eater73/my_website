@@ -160,25 +160,6 @@ nav ul li a:hover {
     }
 }
 
-/* Stack table + info on small screens */
-@media (max-width: 800px) {
-    .bottom-flex {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .table-wrapper,
-    .info-wrapper {
-        width: 100%;
-    }
-
-    .info-wrapper p {
-        font-size: 1rem;
-        line-height: 1.5;
-    }
-}
-
-
 /*Table Styling*/
 td, th {
     padding: 10px;
@@ -195,29 +176,28 @@ td, th {
     transform: translateX(260px);
 }
 
-.table-and-info {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: 20px; /* reduce space between them */
-  width: 100%; /* make the container full width */
-  margin-top: 30px;
-}
-
 .bottom-flex {
   display: flex;
   align-items: stretch;
   gap: 20px;
 }
 
-.info-wrapper {
-  background: rgba(255, 255, 255, 0.05); /* makes the height stretch visible */
-  padding: 20px;
-  border-radius: 8px;
+/* Fix bottom section on mobile */
+@media (max-width: 800px) {
+    .bottom-flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .table-wrapper,
+    .info-wrapper {
+        width: 100%;
+        min-width: 0; /* prevents squishing */
+    }
+
+    .info-wrapper p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
 }
 
-.table-wrapper {
-  background: rgba(255, 255, 255, 0.05);
-  padding: 20px;
-  border-radius: 8px;
-}
