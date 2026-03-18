@@ -160,6 +160,25 @@ nav ul li a:hover {
     }
 }
 
+/* Stack table + info on small screens */
+@media (max-width: 800px) {
+    .bottom-flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .table-wrapper,
+    .info-wrapper {
+        width: 100%;
+    }
+
+    .info-wrapper p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
+
+
 /*Table Styling*/
 td, th {
     padding: 10px;
