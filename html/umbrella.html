@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Details</title>
 
     <!-- Main Styles -->
     <link rel="stylesheet" href="../styles.css">
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Lineicons -->
     <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
@@ -18,38 +18,52 @@
 
 <body>
 
-    <!-- Hamburger Button -->
-    <div class="menu-button">
-        <i class="lni lni-menu"></i>
-    </div>
+    <!-- HEADER + NAVIGATION -->
+    <header>
+        <!-- Hamburger Button -->
+        <button class="menu-button" aria-label="Open navigation menu">
+            <i class="lni lni-menu"></i>
+        </button>
 
-    <!-- Sliding Navigation Menu -->
-    <nav class="nav-closed">
-        <ul>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../html/history.html">History</a></li>
-            <li><a href="../html/about-us.html">Contact</a></li>
-            <li><a href="../html/products.html">Products</a></li>
-            <li><a href="https://docs.blender.org/manual/en/latest/interface/tool_system.html" target="_blank">
-                Blender Manual 5.0</a></li>
-        </ul>
-    </nav>
+        <!-- Sliding Navigation Menu -->
+        <nav class="nav-closed" aria-label="Main Navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../html/history.html">History</a></li>
+                <li><a href="../html/about-us.html">Contact</a></li>
+                <li><a href="../html/products.html">Products</a></li>
+                <li>
+                    <a href="https://docs.blender.org/manual/en/latest/interface/tool_system.html" target="_blank">
+                        Blender Manual 5.0
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- CENTERED PRODUCT CONTENT -->
-    <div class="product-container">
+    <!-- PRODUCT CONTENT -->
+    <main class="product-container">
+
         <h1>Umbrella Project</h1>
 
-        <img src="../images/final/umbrella-blender.png" alt="Umbrella keychain">
+        <figure>
+            <img src="../images/final/umbrella-blender.png" alt="Umbrella Corporation keychain">
+        </figure>
 
         <p><strong>Price:</strong> 19.99 USD</p>
         <p><strong>Description:</strong> The Resident Evil Corporation Logo Keychain.</p>
-        <p>Resident Evil Company. They are a malicious multinational conglomerate from Resident Evil.
+
+        <p>
+            Resident Evil Company. They are a malicious multinational conglomerate from Resident Evil.
             They engineer bioweapons, for example, the T-virus, G-virus, and various BOWs. One impact they made was
-            in Raccoon City.</p>
+            in Raccoon City.
+        </p>
 
         <a class="back-link" href="../html/products.html">Back to Products</a>
-    </div>
 
+    </main>
+
+    <!-- MOBILE MENU SCRIPT -->
     <script>
         const menuButton = document.querySelector('.menu-button');
         const nav = document.querySelector('nav');
