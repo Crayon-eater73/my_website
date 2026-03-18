@@ -5,91 +5,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Page CSS -->
     <link rel="stylesheet" href="../styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
+
+    <!-- Lineicons -->
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
 </head>
 
 <body>
 
-   <!-- Lineicons  -->
-<link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
+    <!-- HEADER + NAVIGATION -->
+    <header>
+        <!-- Hamburger Button -->
+        <button class="menu-button" aria-label="Open navigation menu">
+            <i class="lni lni-menu"></i>
+        </button>
 
-<!-- Hamburger Button -->
-<div class="menu-button">
-    <i class="lni lni-menu"></i>
-</div>
+        <!-- Sliding Navigation Menu -->
+        <nav class="nav-closed" aria-label="Main Navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../html/history.html">History</a></li>
+                <li><a href="../html/about-us.html">Contact</a></li>
+                <li><a href="../html/products.html">Products</a></li>
+                <li>
+                    <a href="https://docs.blender.org/manual/en/latest/interface/tool_system.html" target="_blank">
+                        Blender Manual 5.0
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- Sliding Navigation Menu -->
-<nav class="nav-closed">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="../html/history.html">History</a></li>
-        <li><a href="../html/about-us.html">Contact</a></li>
-        <li><a href="../html/products.html">Products</a></li>
-        <li><a href="https://docs.blender.org/manual/en/latest/interface/tool_system.html" target="_blank">
-            Blender Manual 5.0</a></li>
-    </ul>
-</nav>
+    <!-- PAGE CONTENT -->
+    <div class="page-content">
 
-<!-- EVERYTHING BELOW GETS WRAPPED -->
-<div class="page-content">
+        <main>
 
-    <!-- Header -->
-    <h1>Products</h1>
-    <h3>Click the image to see details</h3>
+            <h1>Products</h1>
+            <h3>Click the image to see details</h3>
 
-    <div class="text-box">
+            <section class="text-box">
 
-        <!-- Item Box -->
-        <div class="event">
-            <span class="timestamp">Item-Box</span>
-            <span class="what-is-it">Keychain</span>
-            <a href="../html/item-box.html">
-                <img src="../images/final/itembox-blender.png" alt="Item Box Keychain" width="300px">
-            </a>
-        </div>
+                <!-- Item Box -->
+                <article class="event">
+                    <span class="timestamp">Item-Box</span>
+                    <span class="what-is-it">Keychain</span>
+                    <a href="../html/item-box.html">
+                        <img src="../images/final/itembox-blender.png" alt="Item Box Keychain" width="300">
+                    </a>
+                </article>
 
-        <!-- Arm Flask -->
-        <div class="event">
-            <span class="timestamp">Arm Flask</span>
-            <span class="what-is-it">Keychain</span>
-            <a href="../html/arm-flask.html">
-                <img src="../images/final/armflaskrose-blender.png" alt="Arm Flask Keychain" width="300px">
-            </a>
-        </div>
+                <!-- Arm Flask -->
+                <article class="event">
+                    <span class="timestamp">Arm Flask</span>
+                    <span class="what-is-it">Keychain</span>
+                    <a href="../html/arm-flask.html">
+                        <img src="../images/final/armflaskrose-blender.png" alt="Arm Flask Keychain" width="300">
+                    </a>
+                </article>
 
-        <!-- Umbrella Corporation -->
-        <div class="event">
-            <span class="timestamp">Umbrella Corporation</span>
-            <span class="what-is-it">Keychain</span>
-            <a href="../html/umbrella.html">
-                <img src="../images/final/umbrella-blender.png" alt="Umbrella Keychain" width="300px">
-            </a>
-        </div>
+                <!-- Umbrella Corporation -->
+                <article class="event">
+                    <span class="timestamp">Umbrella Corporation</span>
+                    <span class="what-is-it">Keychain</span>
+                    <a href="../html/umbrella.html">
+                        <img src="../images/final/umbrella-blender.png" alt="Umbrella Corporation Keychain" width="300">
+                    </a>
+                </article>
 
-        <!-- Goop Juice -->
-        <div class="event">
-            <span class="timestamp">Goop Juice</span>
-            <span class="what-is-it">Keychain</span>
-            <a href="../html/goop-juice.html">
-                <img src="../images/final/goop-juice-bledner.png" alt="Healing agent Keychain" width="300px">
-            </a>
-        </div>
+                <!-- Goop Juice -->
+                <article class="event">
+                    <span class="timestamp">Goop Juice</span>
+                    <span class="what-is-it">Keychain</span>
+                    <a href="../html/goop-juice.html">
+                        <img src="../images/final/goop-juice-bledner.png" alt="Goop Juice Healing Agent Keychain" width="300">
+                    </a>
+                </article>
+
+            </section>
+
+        </main>
 
     </div>
 
-</div>
-
-
+    <!-- MOBILE MENU SCRIPT -->
     <script>
-    const menuButton = document.querySelector('.menu-button');
-    const nav = document.querySelector('nav');
+        const menuButton = document.querySelector('.menu-button');
+        const nav = document.querySelector('nav');
 
-    menuButton.addEventListener('click', () => {
-        nav.classList.toggle('nav-open');
-        nav.classList.toggle('nav-closed');
-    });
+        menuButton.addEventListener('click', () => {
+            nav.classList.toggle('nav-open');
+            nav.classList.toggle('nav-closed');
+        });
     </script>
 
 </body>
