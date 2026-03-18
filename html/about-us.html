@@ -2,155 +2,213 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us</title>
-  <link rel="stylesheet" href="../css/about-us.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-    rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="../css/about-us.css">
+
+    <!-- Lineicons -->
+    <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet">
+    <!-- HEADER + NAVIGATION -->
+    <header>
+        <!-- Hamburger Button -->
+        <button class="menu-button" aria-label="Open navigation menu">
+            <i class="lni lni-menu"></i>
+        </button>
 
-  <div class="menu-button">
-      <i class="lni lni-menu"></i>
-  </div>
+        <!-- Sliding Navigation Menu -->
+        <nav class="nav-closed" aria-label="Main Navigation">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../html/history.html">History</a></li>
+                <li><a href="../html/about-us.html">Contact</a></li>
+                <li><a href="../html/products.html">Products</a></li>
+                <li>
+                    <a href="https://docs.blender.org/manual/en/latest/interface/tool_system.html" target="_blank">
+                        Blender Manual 5.0
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-  <nav class="nav-closed">
-      <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="../html/history.html">History</a></li>
-          <li><a href="../html/about-us.html">Contact</a></li>
-          <li><a href="../html/products.html">Products</a></li>
-          <li><a href="https://docs.blender.org/manual/en/latest/interface/tool_system.html" target="_blank">
-              Blender Manual 5.0</a></li>
-      </ul>
-  </nav>
+    <!-- PAGE CONTENT -->
+    <div class="page-content">
 
-  <div class="page-content">
+        <div class="page-layout">
 
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+                <h2>Contact Info</h2>
+                <p>Email: FakeEmailAddress@gmail.com</p>
+                <p>Phone Number: Fake Number</p>
+            </aside>
 
-    <div class="page-layout">
+            <!-- MAIN CONTENT -->
+            <main class="content">
+                <h1>About Us</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem
+                    placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+                    Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer
+                    nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra
+                    inceptos himenaeos.
+                </p>
 
-      <aside class="sidebar">
-        <h2>Contact Info</h2>
-        <p>Email: FakeEmailAddress@gmail.com</p>
-        <p>Phone Number: Fake Number</p>
-      </aside>
-<!--hop half-->
-      <main class="content">
-        <h1>About Us</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem
-          placerat.
-          In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus
-          fringilla lacus nec metus bibendum egestas.
-          Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu.
-          Ad litora torquent per conubia nostra inceptos himenaeos.</p>
+                <h2>Blender Skills</h2>
+                <div class="skill-grid">
+                    <div class="skill-grid">3D Modeling</div>
+                    <div class="skill-grid">Sculpting/texturing</div>
+                    <div class="skill-grid">Lighting</div>
+                    <div class="skill-grid">Animation</div>
+                </div>
+            </main>
 
-        <h2>Blender Skills</h2>
-        <div class="skill-grid">
-          <div class="skill-grid">3D Modeling</div>
-          <div class="skill-grid">Sculpting/texturing</div>
-          <div class="skill-grid">Lighting</div>
-          <div class="skill-grid">Animation</div>
         </div>
-      </main>
+
+        <!-- LOWER SECTION -->
+        <section class="bottom-flex">
+
+            <!-- TOOL TABLE -->
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tool</th>
+                            <th>Mode</th>
+                            <th>What it Does</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Move (Grab)</td>
+                            <td>Object / Edit</td>
+                            <td>Moves objects or selected vertices/edges/faces along axes.</td>
+                        </tr>
+                        <tr>
+                            <td>Rotate</td>
+                            <td>Object / Edit</td>
+                            <td>Rotates objects or selected geometry around a pivot point.</td>
+                        </tr>
+                        <tr>
+                            <td>Scale</td>
+                            <td>Object / Edit</td>
+                            <td>Resizes objects or selected geometry along one or more axes.</td>
+                        </tr>
+                        <tr>
+                            <td>Extrude</td>
+                            <td>Edit</td>
+                            <td>Pulls out new geometry from selected faces, edges, or vertices.</td>
+                        </tr>
+                        <tr>
+                            <td>Inset</td>
+                            <td>Edit</td>
+                            <td>Creates a smaller face inside a face, useful for panels and details.</td>
+                        </tr>
+                        <tr>
+                            <td>Bevel</td>
+                            <td>Edit</td>
+                            <td>Chamfers or rounds edges/corners by adding extra geometry.</td>
+                        </tr>
+                        <tr>
+                            <td>Loop Cut</td>
+                            <td>Edit</td>
+                            <td>Adds a loop of edges around the mesh to increase detail.</td>
+                        </tr>
+                        <tr>
+                            <td>Knife</td>
+                            <td>Edit</td>
+                            <td>Cuts new edges into the mesh by drawing custom cuts.</td>
+                        </tr>
+                        <tr>
+                            <td>Spin</td>
+                            <td>Edit</td>
+                            <td>Rotates selected geometry around an axis to create radial shapes.</td>
+                        </tr>
+                        <tr>
+                            <td>Merge</td>
+                            <td>Edit</td>
+                            <td>Combines multiple vertices into one at a chosen location.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- INFO SECTION -->
+            <div class="info-wrapper">
+
+                <h2>What we do</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem
+                    placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+                    Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer
+                    nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra
+                    inceptos himenaeos.
+                </p>
+
+                <h2>Our Services</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem
+                    placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+                    Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer
+                    nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra
+                    inceptos himenaeos.
+                </p>
+
+                <h2>Our Mission</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem
+                    placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+                    Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer
+                    nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra
+                    inceptos himenaeos.
+                </p>
+
+                <h2>What Makes Us Different</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem
+                    placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+                    Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer
+                    nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra
+                    inceptos himenaeos.
+                </p>
+
+                <h2>Our Style</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem
+                    placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor.
+                    Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer
+                    nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra
+                    inceptos himenaeos.
+                </p>
+
+            </div>
+
+        </section>
 
     </div>
 
-    <div class="bottom-flex">
-<!--bottom half-->
-      <div class="table-wrapper">
-        <table>
-          <tr>
-            <th>Tool</th>
-            <th>Mode</th>
-            <th>What it Does</th>
-          </tr>
-          <tr>
-            <td>Move (Grab)</td>
-            <td>Object / Edit</td>
-            <td>Moves objects or selected vertices/edges/faces along axes.</td>
-          </tr>
-          <tr>
-            <td>Rotate</td>
-            <td>Object / Edit</td>
-            <td>Rotates objects or selected geometry around a pivot point.</td>
-          </tr>
-          <tr>
-            <td>Scale</td>
-            <td>Object / Edit</td>
-            <td>Resizes objects or selected geometry along one or more axes.</td>
-          </tr>
-          <tr>
-            <td>Extrude</td>
-            <td>Edit</td>
-            <td>Pulls out new geometry from selected faces, edges, or vertices.</td>
-          </tr>
-          <tr>
-            <td>Inset</td>
-            <td>Edit</td>
-            <td>Creates a smaller face inside a face, useful for panels and details.</td>
-          </tr>
-          <tr>
-            <td>Bevel</td>
-            <td>Edit</td>
-            <td>Chamfers or rounds edges/corners by adding extra geometry.</td>
-          </tr>
-          <tr>
-            <td>Loop Cut</td>
-            <td>Edit</td>
-            <td>Adds a loop of edges around the mesh to increase detail.</td>
-          </tr>
-          <tr>
-            <td>Knife</td>
-            <td>Edit</td>
-            <td>Cuts new edges into the mesh by drawing custom cuts.</td>
-          </tr>
-          <tr>
-            <td>Spin</td>
-            <td>Edit</td>
-            <td>Rotates selected geometry around an axis to create radial shapes.</td>
-          </tr>
-          <tr>
-            <td>Merge</td>
-            <td>Edit</td>
-            <td>Combines multiple vertices into one at a chosen location.</td>
-          </tr>
-        </table>
-      </div>
+    <!-- MOBILE MENU SCRIPT -->
+    <script>
+        const menuButton = document.querySelector('.menu-button');
+        const nav = document.querySelector('nav');
 
-      <div class="info-wrapper">
-        <h2>What we do</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-
-        <h2>Our Services</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-
-        <h2>Our Mission</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-
-        <h2>What Makes Us Different</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-
-        <h2>Our Style</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.</p>
-      </div>
-
-    </div> 
-
-  </div>
-
-  <script>
-    const menuButton = document.querySelector('.menu-button');
-    const nav = document.querySelector('nav');
-    menuButton.addEventListener('click', () => {
-        nav.classList.toggle('nav-open');
-        nav.classList.toggle('nav-closed');
-    });
-  </script>
+        menuButton.addEventListener('click', () => {
+            nav.classList.toggle('nav-open');
+            nav.classList.toggle('nav-closed');
+        });
+    </script>
 
 </body>
+
 </html>
